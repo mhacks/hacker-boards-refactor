@@ -441,6 +441,86 @@ chip</description>
 <rectangle x1="-2.3876" y1="-1.651" x2="-1.4376" y2="1.649" layer="51"/>
 <rectangle x1="1.4478" y1="-1.651" x2="2.3978" y2="1.649" layer="51"/>
 </package>
+<package name="QFN24_4X4">
+<smd name="1" x="-1.8923" y="1.25" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="2" x="-1.8923" y="0.75" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="3" x="-1.8923" y="0.25" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="4" x="-1.8923" y="-0.25" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="5" x="-1.8923" y="-0.75" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="6" x="-1.8923" y="-1.25" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="7" x="-1.25" y="-1.8923" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="8" x="-0.75" y="-1.8923" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="9" x="-0.25" y="-1.8923" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="10" x="0.25" y="-1.8923" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="11" x="0.75" y="-1.8923" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="12" x="1.25" y="-1.8923" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="13" x="1.8923" y="-1.25" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="14" x="1.8923" y="-0.75" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="15" x="1.8923" y="-0.25" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="16" x="1.8923" y="0.25" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="17" x="1.8923" y="0.75" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="18" x="1.8923" y="1.25" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="19" x="1.25" y="1.8923" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="20" x="0.75" y="1.8923" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="21" x="0.25" y="1.8923" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="22" x="-0.25" y="1.8923" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="23" x="-0.75" y="1.8923" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="24" x="-1.25" y="1.8923" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="25" x="0" y="0" dx="2.794" dy="2.794" layer="1"/>
+<wire x1="1.9812" y1="1.7272" x2="1.9812" y2="1.9812" width="0.1524" layer="51"/>
+<wire x1="1.7272" y1="-1.9812" x2="1.9812" y2="-1.9812" width="0.1524" layer="51"/>
+<wire x1="-1.9812" y1="-1.7272" x2="-1.9812" y2="-1.9812" width="0.1524" layer="51"/>
+<wire x1="-1.7272" y1="1.9812" x2="-1.9812" y2="1.9812" width="0.1524" layer="51"/>
+<wire x1="-1.9812" y1="-1.9812" x2="-1.7272" y2="-1.9812" width="0.1524" layer="51"/>
+<wire x1="1.9812" y1="-1.9812" x2="1.9812" y2="-1.7272" width="0.1524" layer="51"/>
+<wire x1="1.9812" y1="1.9812" x2="1.7272" y2="1.9812" width="0.1524" layer="51"/>
+<wire x1="-1.9812" y1="1.9812" x2="-1.9812" y2="1.7272" width="0.1524" layer="51"/>
+<polygon width="0" layer="51">
+<vertex x="0.0595" y="-2.5527"/>
+<vertex x="0.0595" y="-2.8067"/>
+<vertex x="0.4405" y="-2.8067"/>
+<vertex x="0.4405" y="-2.5527"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="0.5595" y="2.5527"/>
+<vertex x="0.5595" y="2.8067"/>
+<vertex x="0.9405" y="2.8067"/>
+<vertex x="0.9405" y="2.5527"/>
+</polygon>
+<text x="-3.5052" y="1.2446" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<wire x1="-1.9812" y1="0.7112" x2="-0.7112" y2="1.9812" width="0.1524" layer="21"/>
+<wire x1="1.397" y1="1.9812" x2="1.0922" y2="1.9812" width="0.1524" layer="21"/>
+<wire x1="0.9144" y1="1.9812" x2="0.6096" y2="1.9812" width="0.1524" layer="21"/>
+<wire x1="0.4064" y1="1.9812" x2="0.1016" y2="1.9812" width="0.1524" layer="21"/>
+<wire x1="-0.1016" y1="1.9812" x2="-0.4064" y2="1.9812" width="0.1524" layer="21"/>
+<wire x1="-0.6096" y1="1.9812" x2="-0.9144" y2="1.9812" width="0.1524" layer="21"/>
+<wire x1="-1.0922" y1="1.9812" x2="-1.397" y2="1.9812" width="0.1524" layer="21"/>
+<wire x1="-1.9812" y1="1.397" x2="-1.9812" y2="1.0922" width="0.1524" layer="21"/>
+<wire x1="-1.9812" y1="0.9144" x2="-1.9812" y2="0.6096" width="0.1524" layer="21"/>
+<wire x1="-1.9812" y1="0.4064" x2="-1.9812" y2="0.1016" width="0.1524" layer="21"/>
+<wire x1="-1.9812" y1="-0.1016" x2="-1.9812" y2="-0.4064" width="0.1524" layer="21"/>
+<wire x1="-1.9812" y1="-0.6096" x2="-1.9812" y2="-0.9144" width="0.1524" layer="21"/>
+<wire x1="-1.9812" y1="-1.0922" x2="-1.9812" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="-1.397" y1="-1.9812" x2="-1.0922" y2="-1.9812" width="0.1524" layer="21"/>
+<wire x1="-0.9144" y1="-1.9812" x2="-0.6096" y2="-1.9812" width="0.1524" layer="21"/>
+<wire x1="-0.4064" y1="-1.9812" x2="-0.1016" y2="-1.9812" width="0.1524" layer="21"/>
+<wire x1="0.1016" y1="-1.9812" x2="0.4064" y2="-1.9812" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="-1.9812" x2="0.9144" y2="-1.9812" width="0.1524" layer="21"/>
+<wire x1="1.0922" y1="-1.9812" x2="1.397" y2="-1.9812" width="0.1524" layer="21"/>
+<wire x1="1.9812" y1="-1.397" x2="1.9812" y2="-1.0922" width="0.1524" layer="21"/>
+<wire x1="1.9812" y1="-0.9144" x2="1.9812" y2="-0.6096" width="0.1524" layer="21"/>
+<wire x1="1.9812" y1="-0.4064" x2="1.9812" y2="-0.1016" width="0.1524" layer="21"/>
+<wire x1="1.9812" y1="0.1016" x2="1.9812" y2="0.4064" width="0.1524" layer="21"/>
+<wire x1="1.9812" y1="0.6096" x2="1.9812" y2="0.9144" width="0.1524" layer="21"/>
+<wire x1="1.9812" y1="1.0922" x2="1.9812" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-1.9812" y1="-1.9812" x2="1.9812" y2="-1.9812" width="0.1524" layer="21"/>
+<wire x1="1.9812" y1="-1.9812" x2="1.9812" y2="1.9812" width="0.1524" layer="21"/>
+<wire x1="1.9812" y1="1.9812" x2="-1.9812" y2="1.9812" width="0.1524" layer="21"/>
+<wire x1="-1.9812" y1="1.9812" x2="-1.9812" y2="-1.9812" width="0.1524" layer="21"/>
+<text x="-3.5052" y="1.2446" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-2.8702" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+<text x="-3.2766" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ESP8266-12">
@@ -607,6 +687,35 @@ chip</description>
 <pin name="OUT" x="15.24" y="0" length="middle" rot="R180"/>
 <wire x1="-10.16" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
 <wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="180"/>
+</symbol>
+<symbol name="SILABS-CP2104">
+<wire x1="-10.16" y1="30.48" x2="10.16" y2="30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="30.48" x2="10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-30.48" x2="-10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-30.48" x2="-10.16" y2="30.48" width="0.254" layer="94"/>
+<pin name="RI" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="GND" x="-15.24" y="10.16" length="middle"/>
+<pin name="D+" x="-15.24" y="0" length="middle"/>
+<pin name="D-" x="-15.24" y="-2.54" length="middle"/>
+<pin name="VIO" x="-15.24" y="27.94" length="middle"/>
+<pin name="VDD" x="-15.24" y="22.86" length="middle"/>
+<pin name="REGIN" x="-15.24" y="15.24" length="middle"/>
+<pin name="VBUS" x="-15.24" y="2.54" length="middle"/>
+<pin name="!RST" x="15.24" y="27.94" length="middle" rot="R180"/>
+<pin name="GPIO.3" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="GPIO.2" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="GPIO.1" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="GPIO.0" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="!SUSPEND" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="VPP" x="-15.24" y="-10.16" length="middle" direction="in"/>
+<pin name="SUSPEND" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="CTS" x="15.24" y="-25.4" length="middle" rot="R180"/>
+<pin name="RTS" x="15.24" y="-22.86" length="middle" rot="R180"/>
+<pin name="RXD" x="15.24" y="-20.32" length="middle" rot="R180"/>
+<pin name="TXD" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="DSR" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="DTR" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="DCD" x="15.24" y="-10.16" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -851,6 +960,43 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connects>
 <connect gate="G$1" pin="IN" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CP2104">
+<gates>
+<gate name="G$1" symbol="SILABS-CP2104" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN24_4X4">
+<connects>
+<connect gate="G$1" pin="!RST" pad="9"/>
+<connect gate="G$1" pin="!SUSPEND" pad="15"/>
+<connect gate="G$1" pin="CTS" pad="18"/>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="4"/>
+<connect gate="G$1" pin="DCD" pad="24"/>
+<connect gate="G$1" pin="DSR" pad="22"/>
+<connect gate="G$1" pin="DTR" pad="23"/>
+<connect gate="G$1" pin="GND" pad="2 25"/>
+<connect gate="G$1" pin="GPIO.0" pad="14"/>
+<connect gate="G$1" pin="GPIO.1" pad="13"/>
+<connect gate="G$1" pin="GPIO.2" pad="12"/>
+<connect gate="G$1" pin="GPIO.3" pad="11"/>
+<connect gate="G$1" pin="REGIN" pad="7"/>
+<connect gate="G$1" pin="RI" pad="1"/>
+<connect gate="G$1" pin="RTS" pad="19"/>
+<connect gate="G$1" pin="RXD" pad="20"/>
+<connect gate="G$1" pin="SUSPEND" pad="17"/>
+<connect gate="G$1" pin="TXD" pad="21"/>
+<connect gate="G$1" pin="VBUS" pad="8"/>
+<connect gate="G$1" pin="VDD" pad="6"/>
+<connect gate="G$1" pin="VIO" pad="5"/>
+<connect gate="G$1" pin="VPP" pad="16"/>
 </connects>
 <technologies>
 <technology name=""/>
