@@ -569,6 +569,19 @@ chip</description>
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
+<package name="SOT363">
+<wire x1="-1.2" y1="-0.8" x2="-1.2" y2="0.8" width="0.2032" layer="21"/>
+<wire x1="1.2" y1="-0.8" x2="1.2" y2="0.8" width="0.2032" layer="21"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-0.7" x2="-1.5" y2="-0.8" width="0.127" layer="21"/>
+<circle x="-1.6" y="-0.7" radius="0.1414" width="0.2032" layer="21"/>
+<smd name="1" x="-0.65" y="-0.8" dx="0.99" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-0.8" dx="0.99" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="0.65" y="-0.8" dx="0.99" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="-0.65" y="0.81" dx="0.99" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="0" y="0.81" dx="0.99" dy="0.3" layer="1" rot="R90"/>
+<smd name="4" x="0.65" y="0.81" dx="0.99" dy="0.3" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ESP8266-12">
@@ -779,6 +792,15 @@ chip</description>
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="MBT3904DW1T1G">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="COL" x="-12.7" y="2.54" length="middle"/>
+<pin name="BASE" x="-12.7" y="-2.54" length="middle"/>
+<pin name="EMIT" x="12.7" y="0" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1095,6 +1117,27 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MBT3904DW1T1G">
+<gates>
+<gate name="G$1" symbol="MBT3904DW1T1G" x="0" y="-10.16"/>
+<gate name="G$2" symbol="MBT3904DW1T1G" x="0" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="SOT363">
+<connects>
+<connect gate="G$1" pin="BASE" pad="2"/>
+<connect gate="G$1" pin="COL" pad="6"/>
+<connect gate="G$1" pin="EMIT" pad="1"/>
+<connect gate="G$2" pin="BASE" pad="5"/>
+<connect gate="G$2" pin="COL" pad="3"/>
+<connect gate="G$2" pin="EMIT" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
