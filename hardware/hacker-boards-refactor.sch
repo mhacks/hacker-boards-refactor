@@ -4869,6 +4869,9 @@ DIN A3, landscape with extra doc field</description>
 <part name="SV1" library="con-lsta" deviceset="FE07-1" device=""/>
 <part name="FRAME1" library="frames" deviceset="DINA3_L" device=""/>
 <part name="SV2" library="con-lsta" deviceset="FE07-1" device=""/>
+<part name="R11" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
+<part name="C6" library="hacker-board" deviceset="C" device="0805" value="1uF"/>
+<part name="C7" library="hacker-board" deviceset="C" device="0805" value="1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -4927,10 +4930,10 @@ DIN A3, landscape with extra doc field</description>
 <instance part="C3" gate="G$1" x="271.78" y="139.7"/>
 <instance part="LED1" gate="G$1" x="220.98" y="-20.32"/>
 <instance part="LED2" gate="G$1" x="251.46" y="-20.32"/>
-<instance part="GND7" gate="1" x="220.98" y="-33.02"/>
-<instance part="GND8" gate="1" x="251.46" y="-33.02"/>
-<instance part="+3V6" gate="G$1" x="226.06" y="-2.54"/>
-<instance part="+3V7" gate="G$1" x="256.54" y="-2.54"/>
+<instance part="GND7" gate="1" x="220.98" y="-38.1"/>
+<instance part="GND8" gate="1" x="251.46" y="-38.1"/>
+<instance part="+3V6" gate="G$1" x="226.06" y="2.54"/>
+<instance part="+3V7" gate="G$1" x="256.54" y="2.54"/>
 <instance part="R4" gate="G$1" x="124.46" y="66.04" rot="R90"/>
 <instance part="R5" gate="G$1" x="139.7" y="66.04" rot="R90"/>
 <instance part="R6" gate="G$1" x="154.94" y="66.04" rot="R90"/>
@@ -4956,6 +4959,9 @@ DIN A3, landscape with extra doc field</description>
 <instance part="FRAME1" gate="G$1" x="-93.98" y="-91.44"/>
 <instance part="FRAME1" gate="G$2" x="193.04" y="-91.44"/>
 <instance part="SV2" gate="G$1" x="142.24" y="-66.04" rot="R180"/>
+<instance part="R11" gate="G$1" x="200.66" y="-22.86" rot="R180"/>
+<instance part="C6" gate="G$1" x="236.22" y="-7.62"/>
+<instance part="C7" gate="G$1" x="269.24" y="-7.62"/>
 </instances>
 <busses>
 </busses>
@@ -4999,10 +5005,22 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <pinref part="LED1" gate="G$1" pin="VDD"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
+<wire x1="226.06" y1="0" x2="226.06" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="-2.54" x2="226.06" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="-5.08" x2="236.22" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="-2.54" x2="226.06" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="226.06" y="-2.54"/>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="VDD"/>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<wire x1="256.54" y1="0" x2="256.54" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="256.54" y1="-2.54" x2="256.54" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-5.08" x2="269.24" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-2.54" x2="256.54" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="256.54" y="-2.54"/>
 </segment>
 <segment>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
@@ -5089,10 +5107,20 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <pinref part="LED1" gate="G$1" pin="GND"/>
 <pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="220.98" y1="-35.56" x2="220.98" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="236.22" y1="-12.7" x2="236.22" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="-30.48" x2="220.98" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="-30.48" x2="220.98" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="GND"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="251.46" y1="-35.56" x2="251.46" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="269.24" y1="-12.7" x2="269.24" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-30.48" x2="251.46" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="251.46" y="-30.48"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -5300,14 +5328,14 @@ DIN A3, landscape with extra doc field</description>
 <label x="111.76" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="DI"/>
-<wire x1="208.28" y1="-22.86" x2="200.66" y2="-22.86" width="0.1524" layer="91"/>
-<label x="200.66" y="-22.86" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="60.96" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
 <label x="124.46" y="45.72" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="-22.86" x2="187.96" y2="-22.86" width="0.1524" layer="91"/>
+<label x="187.96" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO15" class="0">
@@ -5503,6 +5531,13 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="-43.18" y1="121.92" x2="-40.64" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="IN"/>
 <wire x1="-40.64" y1="121.92" x2="-40.64" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="LED1" gate="G$1" pin="DI"/>
+<wire x1="205.74" y1="-22.86" x2="208.28" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
