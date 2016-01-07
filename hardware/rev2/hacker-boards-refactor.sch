@@ -175,18 +175,6 @@
 <rectangle x1="-8" y1="6" x2="8" y2="13" layer="41"/>
 <rectangle x1="-8" y1="6" x2="8" y2="13" layer="42"/>
 </package>
-<package name="L1812">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<wire x1="-1.4732" y1="1.6002" x2="1.4732" y2="1.6002" width="0.1016" layer="51"/>
-<wire x1="-1.4478" y1="-1.6002" x2="1.4732" y2="-1.6002" width="0.1016" layer="51"/>
-<smd name="1" x="-1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
-<smd name="2" x="1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.3876" y1="-1.651" x2="-1.4376" y2="1.649" layer="51"/>
-<rectangle x1="1.4478" y1="-1.651" x2="2.3978" y2="1.649" layer="51"/>
-</package>
 <package name="USB_MICRO_B-JST-MC5BR3-M404-4S-TB">
 <wire x1="-3.8354" y1="-1.524" x2="-3.8354" y2="2.55" width="0" layer="20"/>
 <wire x1="-3.8354" y1="2.55" x2="-3.45" y2="2.95" width="0" layer="20" curve="-90"/>
@@ -576,12 +564,6 @@ package type OT</description>
 <pin name="TXD" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
 <text x="0" y="0" size="1.778" layer="94" font="vector" ratio="12" rot="R90" align="center">ESP12</text>
 </symbol>
-<symbol name="USB-FUSE">
-<pin name="IN" x="-15.24" y="0" length="middle"/>
-<pin name="OUT" x="15.24" y="0" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="180"/>
-</symbol>
 <symbol name="USB-B-MICRO">
 <wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
@@ -768,23 +750,6 @@ package type OT</description>
 <connect gate="G$1" pin="RXD" pad="15"/>
 <connect gate="G$1" pin="TXD" pad="16"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="USB-FUSE">
-<description>MF-MSMF075-2</description>
-<gates>
-<gate name="G$1" symbol="USB-FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="L1812">
-<connects>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9466,7 +9431,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
-<part name="U$1" library="hacker-board" deviceset="USB-FUSE" device=""/>
 <part name="J1" library="hacker-board" deviceset="MICRO_USB_B_JST_MC5BR3-M404-4S" device=""/>
 <part name="D1" library="hacker-board" deviceset="LED" device="0603"/>
 <part name="D2" library="hacker-board" deviceset="LED" device="0603"/>
@@ -9575,7 +9539,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="+3V4" gate="G$1" x="40.64" y="20.32"/>
 <instance part="GND6" gate="1" x="40.64" y="-17.78"/>
 <instance part="+3V5" gate="G$1" x="261.62" y="53.34"/>
-<instance part="U$1" gate="G$1" x="-25.4" y="114.3"/>
 <instance part="J1" gate="G$1" x="-50.8" y="127" rot="R180"/>
 <instance part="D1" gate="G$1" x="218.44" y="33.02"/>
 <instance part="D2" gate="G$1" x="261.62" y="33.02"/>
@@ -10142,13 +10105,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="OUT"/>
-<wire x1="-10.16" y1="114.3" x2="-5.08" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="-5.08" y1="114.3" x2="-5.08" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="114.3" x2="-5.08" y2="111.76" width="0.1524" layer="91"/>
 <junction x="-5.08" y="114.3"/>
 <pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="+5V"/>
+<wire x1="-43.18" y1="121.92" x2="-40.64" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="121.92" x2="-40.64" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="114.3" x2="-5.08" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+3" gate="1" pin="+5V"/>
@@ -10243,14 +10208,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$4" gate="G$2" pin="BASE"/>
 <wire x1="43.18" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="+5V"/>
-<wire x1="-43.18" y1="121.92" x2="-40.64" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="IN"/>
-<wire x1="-40.64" y1="121.92" x2="-40.64" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
