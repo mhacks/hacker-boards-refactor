@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9413,7 +9413,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.2032" drill="0.4064">
 </class>
 </classes>
 <parts>
@@ -10249,11 +10249,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="113,1,88.9,129.54,X1,,,,,"/>
 <approved hash="113,1,218.762,31.75,D1,,,,,"/>
 <approved hash="113,1,261.942,31.75,D2,,,,,"/>
-<approved hash="113,1,48.2177,-64.5753,SV1,,,,,"/>
 <approved hash="113,1,100.226,40.536,FRAME1,,,,,"/>
-<approved hash="113,1,137.202,-67.5047,SV2,,,,,"/>
-<approved hash="113,1,132.609,-7.62,TM1,,,,,"/>
-<approved hash="113,1,143.264,0,SJ1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
