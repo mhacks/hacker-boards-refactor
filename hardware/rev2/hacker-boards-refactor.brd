@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -167,7 +167,7 @@ Board</text>
 <text x="3.937" y="19.812" size="1.016" layer="26" font="vector" ratio="15" rot="MR0" align="center">RX</text>
 <text x="3.937" y="22.352" size="1.016" layer="26" font="vector" ratio="15" rot="MR0" align="center">TX</text>
 <text x="3.937" y="24.892" size="1.016" layer="26" font="vector" ratio="15" rot="MR0" align="center">D0</text>
-<text x="21.336" y="27.432" size="1.016" layer="25" font="vector" ratio="15" align="center">D16</text>
+<text x="21.082" y="27.432" size="1.016" layer="26" font="vector" ratio="15" rot="MR0" align="center">D16</text>
 <text x="21.082" y="24.892" size="1.016" layer="26" font="vector" ratio="15" rot="MR0" align="center">D15</text>
 <text x="21.082" y="19.812" size="1.016" layer="26" font="vector" ratio="15" rot="MR0" align="center">D13</text>
 <text x="21.082" y="17.272" size="1.016" layer="26" font="vector" ratio="15" rot="MR0" align="center">D12</text>
@@ -2389,7 +2389,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="10.302" y1="40.625" x2="11.176" y2="39.751" width="0.2032" layer="1"/>
 <via x="11.176" y="39.751" extent="1-16" drill="0.4064" diameter="0.4064"/>
 <wire x1="11.176" y1="39.751" x2="11.455" y2="39.751" width="0.2032" layer="16"/>
-<wire x1="11.455" y1="39.751" x2="12.685" y2="38.521" width="0.6096" layer="16"/>
+<wire x1="11.455" y1="39.751" x2="12.685" y2="38.521" width="0.2032" layer="16"/>
 <wire x1="17.411" y1="26.924" x2="17.018" y2="26.924" width="0.2032" layer="1"/>
 <wire x1="17.018" y1="26.924" x2="16.51" y2="26.416" width="0.2032" layer="1"/>
 <wire x1="16.51" y1="26.416" x2="13.35" y2="26.416" width="0.2032" layer="1"/>
@@ -3073,8 +3073,8 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="4,1,da3e720e33c9ff6b"/>
 <approved hash="4,1,a26867635fc76942"/>
 <approved hash="4,1,7434b0aa24ca340b"/>
-<approved hash="5,1,8eab9fb2b95e846f"/>
 <approved hash="5,1,8440b9419f418e40"/>
+<approved hash="5,1,8eab9fb2b95e846f"/>
 <approved hash="4,1,b9808122d01618aa"/>
 <approved hash="4,1,2780793d02085ab6"/>
 <approved hash="4,1,6780373db40924b4"/>
