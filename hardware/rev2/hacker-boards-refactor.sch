@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9871,9 +9871,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="58.42" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="5"/>
-<wire x1="99.06" y1="-66.04" x2="104.14" y2="-66.04" width="0.1524" layer="91"/>
-<label x="101.6" y="-66.04" size="1.778" layer="95"/>
+<pinref part="JP1" gate="G$1" pin="3"/>
+<wire x1="99.06" y1="-71.12" x2="104.14" y2="-71.12" width="0.1524" layer="91"/>
+<label x="101.6" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO12" class="0">
@@ -9883,9 +9883,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="58.42" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="4"/>
-<wire x1="99.06" y1="-68.58" x2="104.14" y2="-68.58" width="0.1524" layer="91"/>
-<label x="101.6" y="-68.58" size="1.778" layer="95"/>
+<pinref part="JP1" gate="G$1" pin="5"/>
+<wire x1="99.06" y1="-66.04" x2="104.14" y2="-66.04" width="0.1524" layer="91"/>
+<label x="101.6" y="-66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO13" class="0">
@@ -9895,9 +9895,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="58.42" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="3"/>
-<wire x1="99.06" y1="-71.12" x2="104.14" y2="-71.12" width="0.1524" layer="91"/>
-<label x="101.6" y="-71.12" size="1.778" layer="95"/>
+<pinref part="JP1" gate="G$1" pin="4"/>
+<wire x1="99.06" y1="-68.58" x2="104.14" y2="-68.58" width="0.1524" layer="91"/>
+<label x="101.6" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO4/SDA" class="0">
