@@ -1,7 +1,7 @@
 #include <Adafruit_NeoPixel.h>
 
-#include <JsonListener.h>
-#include <JsonStreamingParser.h>
+//#include <JsonListener.h>
+//#include <JsonStreamingParser.h>
 
 #include <ArduinoJson.h>
 
@@ -11,8 +11,8 @@
 
 #include <ESP8266WiFi.h>
 
-const char* ssid     = "Mulan";
-const char* password = "testing0";
+const char* ssid     = "MHacks";
+const char* password = "mhacks9design";
 
 const char* host = "mhacks.github.io";
 
@@ -22,7 +22,7 @@ Adafruit_NeoPixel leds = Adafruit_NeoPixel(2, 15, NEO_GRB + NEO_KHZ800);
 
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   delay(100);
 
   // We start by connecting to a WiFi network
