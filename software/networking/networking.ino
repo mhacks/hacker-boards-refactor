@@ -68,7 +68,7 @@ void loop() {
   // We now create a URI for the request
   String url = "/ws2812-test.html";
   Serial.print("Requesting URL: ");
-  Serial.println(url);
+  //Serial.println(url);
 
   // This will send the request to the server
   client.print(String("GET ") + url + " HTTP/1.1\r\n" +
@@ -81,7 +81,7 @@ void loop() {
   while (client.available()) {
     const String data = client.readStringUntil('\r');
     StaticJsonBuffer<2000> jsonBuffer;
-    Serial.println(data);
+    //Serial.println(data);
     JsonObject& root = jsonBuffer.parseObject((data.c_str()));
     Serial.print("See what's next to me?");
     Serial.println(root.containsKey("test"));
